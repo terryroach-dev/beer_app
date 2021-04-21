@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Find your Favourite Beer. By Terry Roach - Web Developer.">
+    <meta name="keywords" content="beer, beer finder, api">
+    <meta name="author" content="Terry Roach">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beer App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header><h1>Find your beer</h1></header>
+
+    <div class="container">
+        <section class="filters">
+            <div class="card filter-card">
+                <div class="filter-container">
+                    <div class="filter-text">
+                        <h3>Alcohol Volume (ABV)</h3>
+                    </div>
+                    <div class="filter">
+                        <p class="filter-abv" id="abv-all">All</p>
+                        <p class="filter-abv" id="abv-weak">Weak</p>
+                        <p class="filter-abv" id="abv-medium">Medium</p>
+                        <p class="filter-abv" id="abv-strong">Strong</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card filter-card">
+                <div class="filter-container">
+                    <div class="filter-text">
+                        <h3>Hoppiness (IBU)</h3>
+                    </div>
+                    <div class="filter">
+                        <p class="filter-ibu" id="ibu-all">All</p>
+                        <p class="filter-ibu" id="ibu-weak">Weak</p>
+                        <p class="filter-ibu" id="ibu-medium">Medium</p>
+                        <p class="filter-ibu" id="ibu-strong">Strong</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card filter-card">
+                <div class="filter-container">
+                    <div class="filter-text">
+                        <h3>Page: <span id="page_number"></span></h3>
+                    </div>
+                    <div class="filter">
+                        <div id="prev-btn"><</div>
+                        <div id="next-btn">></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <main>
+            <div class="beers-div"></div>
+        </main>
+    </div>
+   
+    <script src="index.js"></script>
+</body>
+</html>
